@@ -183,7 +183,7 @@
                     for (key in filteredData[group]) {
                         value = filteredData[group][key];
                         if (!match(search, key) && !match(search, value)) {
-                            filteredData[group][key] = null;
+                            delete filteredData[group][key];
                         }
                     }
                 }
