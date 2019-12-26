@@ -190,6 +190,9 @@
 
             function update() {
                 $.getJSON("/data.json?timestamp=" + Date.now(), function (data) {
+                    console.log('asldfjajslfj');
+                    console.log(data);
+
                     jsonData = data;
                     filter();
                 });
