@@ -99,7 +99,7 @@
             <div class="my-3 p-3 bg-white rounded shadow-sm">
                 <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
                 <template>
-                    <div class="media text-muted pt-3" v-for="(title, href) in filteredData ? filteredData.suggestions : {}">
+                    <div class="media text-muted pt-3" v-for="(title, href) in suggestions">
                         <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
                             <title>Placeholder</title>
                             <rect width="100%" height="100%" fill="#007bff"/>
@@ -120,7 +120,7 @@
             <div class="my-3 p-3 bg-white rounded shadow-sm">
                 <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
                 <template>
-                    <div class="media text-muted pt-3" v-for="(title, href) in filteredData ? filteredData.recent_updates : {}">
+                    <div class="media text-muted pt-3" v-for="(title, href) in recent_updates">
                         <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
                             <title>Placeholder</title>
                             <rect width="100%" height="100%" fill="#007bff"/>
@@ -154,17 +154,13 @@
             $(function () {
                 vm = new Vue({
                     el: '#app',
-                    data: filteredData,
+                    data: {
+                        suggestions: filteredData ? filteredData.suggestions : {},
+                        recent_updates: filteredData ? filteredData.recent_updates : {},
+                    },
                     mounted: function () {
                         vm = this;
                     }
-                });
-
-                $.getJSON("data.json", function (data) {
-                    console.log(data);
-                    jsonData = data;
-                    filter();
-                    update();
                 });
 
                 $('#search').keyup(function (event) {
@@ -185,14 +181,11 @@
                         }
                     }
                 }
-                filteredData = copiedData;
+                vm.data = filteredData = copiedData;
             }
 
             function update() {
                 $.getJSON("data.json?timestamp=" + Date.now(), function (data) {
-                    console.log('asldfjajslfj');
-                    console.log(data);
-
                     jsonData = data;
                     filter();
                 });
