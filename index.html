@@ -149,18 +149,24 @@
         <script src="offcanvas.js"></script>
 
         <script>
-            var vm, jsonData, filteredData, search;
+            var vm, jsonData, search;
 
             $(function () {
                 vm = new Vue({
                     el: '#app',
                     data: {
-                        suggestions: filteredData ? filteredData.suggestions : {},
-                        recent_updates: filteredData ? filteredData.recent_updates : {},
+                        suggestions: {},
+                        recent_updates: {},
                     },
                     mounted: function () {
                         vm = this;
                     }
+                });
+
+                $.getJSON("data.json", function (data) {
+                    jsonData = data;
+                    filter();
+                    update();
                 });
 
                 $('#search').keyup(function (event) {
@@ -172,16 +178,17 @@
             });
 
             function filter() {
-                var copiedData = $.extend(true, {}, jsonData);
-                for (var group in copiedData) {
-                    for (key in copiedData[group]) {
-                        value = copiedData[group][key];
+                filteredData = $.extend(true, {}, jsonData);
+                for (var group in filteredData) {
+                    for (key in filteredData[group]) {
+                        value = filteredData[group][key];
                         if (!match(search, key) && !match(search, value)) {
-                            copiedData[group][key] = null;
+                            filteredData[group][key] = null;
                         }
                     }
                 }
-                vm.data = filteredData = copiedData;
+                vm.suggestions = filteredData.suggestions;
+                vm.recent_updates = filteredData.recent_updates;
             }
 
             function update() {
