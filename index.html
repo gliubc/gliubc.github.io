@@ -160,14 +160,34 @@
                     }
                 });
 
-                alert('slafjlaj');
-                $.getJSON("data.json", function (data) {
-                    alert('hha');
-                    console.log(data);
-                    jsonData = data;
-                    filter();
-                    update();
-                });
+                // $.getJSON("data.json", function (data) {
+                //     alert('hha');
+                //     console.log(data);
+                //     jsonData = data;
+                //     filter();
+                //     update();
+                // });
+
+                var jqxhr = $.getJSON( "data.json", function() {
+  console.log( "success" );
+})
+  .done(function() {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+ 
+// Perform other work here ...
+ 
+// Set another completion function for the request above
+jqxhr.always(function() {
+  console.log( "second complete" );
+});
+
 
                 $('#search').keyup(function (event) {
                     search = $('#search').val();
