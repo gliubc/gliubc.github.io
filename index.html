@@ -161,7 +161,6 @@
                 });
 
                 $.getJSON("data.json", function (data) {
-                    alert('hha');
                     console.log(data);
                     jsonData = data;
                     filter();
@@ -201,6 +200,9 @@
 
             function match(keyword, text) {
                 var i, index, keywords;
+
+                keyword = keyword || "";
+                text = text || "";
 
                 keyword = keyword.trim().toLowerCase().replace(/_/g, '');
                 text = text.trim().toLowerCase().replace(/_/g, '');
