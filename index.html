@@ -65,7 +65,7 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
@@ -86,7 +86,7 @@
                 <a class="nav-link" href="#">Link</a>
             </nav>
         </div>
-        <main role="main" class="container">
+        <main role="main" class="container" id="app">
             <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
                 <svg class="mr-3" style="fill: white" height="48" viewBox="0 0 16 16" version="1.1" width="48" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
@@ -98,7 +98,7 @@
             </div>
             <div class="my-3 p-3 bg-white rounded shadow-sm">
                 <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
-                <div class="media text-muted pt-3">
+                <div class="media text-muted pt-3" v-for="(title, href) in filteredData ? filteredData.suggestions : {}">
                     <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#007bff"/>
@@ -106,9 +106,9 @@
                     </svg>
                     <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <div class="d-flex justify-content-between align-items-center w-100">
-                            <strong class="text-gray-dark"><a href="https://www.google.com/">Google</a></strong>
+                            <strong class="text-gray-dark"><a :href="href">{{title}}</a></strong>
                         </div>
-                        <span class="d-block">https://www.google.com/</span>
+                        <span class="d-block">{{href}}</span>
                     </div>
                 </div>
                 <small class="d-block text-right mt-3">
@@ -117,15 +117,15 @@
             </div>
             <div class="my-3 p-3 bg-white rounded shadow-sm">
                 <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
-                <div class="media text-muted pt-3">
+                <div class="media text-muted pt-3" v-for="(title, href) in filteredData ? filteredData.recent_updates : {}">
                     <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#007bff"/>
                         <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
                     </svg>
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark"><a href="https://www.stackoverflow.com/">Stack Overflow</a></strong>
-                        https://stackoverflow.com/
+                        <strong class="d-block text-gray-dark"><a :href="href">{{title}}</a></strong>
+                        {{href}}
                     </p>
                 </div>
                 <small class="d-block text-right mt-3">
@@ -136,12 +136,78 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <!-- Vue -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="offcanvas.js"></script>
+
+        <script>
+            var vm, jsonData, filteredData, search;
+
+            $(function () {
+                vm = new Vue({
+                    el: '#app',
+                    data: filteredData,
+                    mounted: function () {
+                        vm = this;
+                    }
+                });
+
+                $.getJSON("data.json", function (data) {
+                    jsonData = data;
+                    filter();
+                    update();
+                });
+
+                $('#search').keyup(function (event) {
+                    search = $('#search').val();
+                    filter();
+                });
+
+                setInterval(update, 30 * 1000);
+            });
+
+            function filter() {
+                var copiedData = $.extend(true, {}, jsonData);
+                for (var group in copiedData) {
+                    for (key in copiedData[group]) {
+                        value = copiedData[group][key];
+                        if (!match(search, key) && !match(search, value)) {
+                            copiedData[group][key] = null;
+                        }
+                    }
+                }
+                filteredData = copiedData;
+            }
+
+            function update() {
+                $.getJSON("data.json?timestamp=" + Date.now(), function (data) {
+                    jsonData = data;
+                    filter();
+                });
+            }
+
+            function match(keyword, text) {
+                var i, index, keywords;
+
+                keyword = keyword.trim().toLowerCase().replace(/_/g, '');
+                text = text.trim().toLowerCase().replace(/_/g, '');
+
+                if (!keyword) return true;
+
+                keywords = keyword.split(' ').filter(word => word.length > 0);
+                for (i in keywords) {
+                    index = text.indexOf(keywords[i]);
+                    if (index !== -1) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+        </script>
     </body>
 </html>
