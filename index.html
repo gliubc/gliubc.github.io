@@ -177,7 +177,7 @@
                 for (var group in filteredData) {
                     for (key in filteredData[group]) {
                         value = filteredData[group][key];
-                        if (!match(search, key) && !match(search, value)) {
+                        if (!match(search, key + value)) {
                             delete filteredData[group][key];
                         }
                     }
