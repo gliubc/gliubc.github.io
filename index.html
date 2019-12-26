@@ -160,7 +160,7 @@
                     }
                 });
 
-                $.getJSON("data.json", function (data) {
+                $.getJSON("/data.json", function (data) {
                     console.log(data);
                     jsonData = data;
                     filter();
@@ -189,7 +189,7 @@
             }
 
             function update() {
-                $.getJSON("data.json?timestamp=" + Date.now(), function (data) {
+                $.getJSON("/data.json?timestamp=" + Date.now(), function (data) {
                     jsonData = data;
                     filter();
                 });
