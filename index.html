@@ -207,7 +207,7 @@
                 keywords = keyword.split(' ').filter(word => word.length > 0);
                 for (i in keywords) {
                     index = text.indexOf(keywords[i]);
-                    if (index !== -1) {
+                    if (index === -1) {
                         return false;
                     }
                 }
