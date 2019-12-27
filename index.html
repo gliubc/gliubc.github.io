@@ -142,10 +142,15 @@
         <!-- Vue -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
+        <!-- pinyin -->
+        <script src="https://hotoo.github.io/pinyin/dist/bundle.js?nowrap"></script>
+
         <script src="offcanvas.js"></script>
 
         <script>
             var vm, jsonData, search;
+
+            var pinyin = window['pinyin'];
 
             $(function () {
                 vm = new Vue({
@@ -176,11 +181,19 @@
             });
 
             function filter() {
-                filteredData = $.extend(true, {}, jsonData);
+                var filteredData = $.extend(true, {}, jsonData);
                 for (var group in filteredData) {
-                    for (key in filteredData[group]) {
-                        value = filteredData[group][key];
-                        if (!match(search, key + value)) {
+                    for (var key in filteredData[group]) {
+                        var value = filteredData[group][key];
+                        var text = key + value;
+                        var pinyin_text = pinyin(text, {
+                            style: pinyin['STYLE_NORMAL']
+                        }).join('');
+                        var pinyin_search = pinyin(search, {
+                            style: pinyin['STYLE_NORMAL']
+                        }).join('');
+
+                        if (!match(search, text) && !match(pinyin_search, pinyin_text)) {
                             delete filteredData[group][key];
                         }
                     }
