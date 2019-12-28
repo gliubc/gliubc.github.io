@@ -1,5 +1,6 @@
 {
     "suggestions": {
+        "https://github.com/mongodb/motor": "mongodb/motor",
         "http://www.tornadoweb.org": "Tornado Web Server",
         "https://duckduckgo.com": "DuckDuckGo",
         "https://twitter.com/home": "twitter",
