@@ -30,6 +30,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://linuxconfig.org/start-stop-and-restart-services-on-systemd-rhel-7-linux-server": "systemd",
         "https://www.freedesktop.org/software/systemd/man/systemd.service.html": "systemd",
         "https://linuxconfig.org/how-to-create-systemd-service-unit-in-linux": "systemd",
         "https://www.linux.com/tutorials/understanding-and-using-systemd/": "systemd",
