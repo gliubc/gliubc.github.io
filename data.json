@@ -30,6 +30,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://www.freedesktop.org/software/systemd/man/systemd.service.html": "systemd",
         "https://linuxconfig.org/how-to-create-systemd-service-unit-in-linux": "systemd",
         "https://www.linux.com/tutorials/understanding-and-using-systemd/": "systemd",
         "http://doc.host5.liuniukeji.net": "doc",
