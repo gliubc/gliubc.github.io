@@ -29,7 +29,8 @@
         "http://yun.rili.cn/wnl/index.html": "中华万年历",
         "https://web.xyz": "倒数网络"
     },
-    "recent_updates": {
+    "recent_updates": 
+        "https://play.google.com/store/apps/details?id=be.mygod.vpnhotspot&hl=zh": "VPN 热点",
         "https://linuxconfig.org/start-stop-and-restart-services-on-systemd-rhel-7-linux-server": "systemd",
         "https://www.freedesktop.org/software/systemd/man/systemd.service.html": "systemd",
         "https://linuxconfig.org/how-to-create-systemd-service-unit-in-linux": "systemd",
