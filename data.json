@@ -30,6 +30,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://nshipster.com/method-swizzling/": "Method Swizzling",
         "https://medium.com/ios-os-x-development/dynamically-change-the-app-icon-7d4bece820d2": "Dynamically Change the App Icon",
         "https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript": "Generate a Hash from string in Javascript",
         "https://stackoverflow.com/questions/23074539/programmatically-create-a-uiview-with-color-gradient": "ios - Programmatically create a UIView with color gradient - Stack Overflow",
