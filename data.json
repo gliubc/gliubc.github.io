@@ -30,6 +30,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/": "Difference between %d and %i format specifier in C language",
         "https://stackoverflow.com/questions/1420421/how-to-pass-on-a-variable-number-of-arguments-to-nsstrings-stringwithformat": "How to “pass on” a variable number of arguments to NSString's +stringWithFormat:",
         "https://nshipster.com/associated-objects/": "Associated Objects",
         "https://stackoverflow.com/questions/5339276/what-are-the-dangers-of-method-swizzling-in-objective-c": "What are the Dangers of Method Swizzling in Objective-C?",
