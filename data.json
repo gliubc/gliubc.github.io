@@ -30,6 +30,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://nshipster.com/kvc-collection-operators/": "KVC Collection Operators",
         "https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/": "Difference between %d and %i format specifier in C language",
         "https://stackoverflow.com/questions/1420421/how-to-pass-on-a-variable-number-of-arguments-to-nsstrings-stringwithformat": "How to “pass on” a variable number of arguments to NSString's +stringWithFormat:",
         "https://nshipster.com/associated-objects/": "Associated Objects",
