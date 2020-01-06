@@ -35,6 +35,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://github.com/AFNetworking/AFNetworking": "AFNetworking",
         "https://open.tencent.com/": "腾讯开放平台",
         "https://mirrors.tuna.tsinghua.edu.cn/help/CocoaPods/": "CocoaPods 镜像使用帮助",
         "https://www.objc.io/issues/7-foundation/key-value-coding-and-observing/": "Key-Value Coding and Observing",
