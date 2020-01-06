@@ -30,6 +30,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "http://www.easemob.com/": "环信",
         "https://www.objc.io/issues/7-foundation/key-value-coding-and-observing/": "Key-Value Coding and Observing",
         "https://nshipster.com/kvc-collection-operators/": "KVC Collection Operators",
         "https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/": "Difference between %d and %i format specifier in C language",
