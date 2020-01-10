@@ -35,6 +35,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://stackoverflow.com/questions/25736700/how-to-localise-a-string-inside-the-ios-info-plist-file": "How to localise a string inside the iOS info.plist file?",
         "https://support.apple.com/en-gb/HT208050": "Use zsh as the default shell on your Mac",
         "https://scriptingosx.com/2017/04/about-bash_profile-and-bashrc-on-macos/": "About bash_profile and bashrc on macOS",
         "https://medium.com/swlh/handling-background-tasks-in-ios-13-67f717d94b3d": "All about handling Background tasks in iOS 13 and below",
