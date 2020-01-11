@@ -35,6 +35,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://stackoverflow.com/questions/39600914/push-notification-not-received-when-app-is-in-background-in-ios-10": "Push notification not received when App is in Background in iOS 10",
         "https://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-javascript": "What is TypeScript and why would I use it in place of JavaScript?",
         "https://stackoverflow.com/questions/39881566/how-to-clear-all-cached-images-loaded-from-sdwebimage": "How to clear all cached images loaded from SDWebImage?",
         "https://stackoverflow.com/questions/25736700/how-to-localise-a-string-inside-the-ios-info-plist-file": "How to localise a string inside the iOS info.plist file?",
