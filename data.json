@@ -37,6 +37,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://malloc.fi/typescript-bridge-javascript-webassembly": "TypeScript is the bridge between JavaScript and WebAssembly",
         "https://zhuanlan.zhihu.com/p/25865972": "WebAssembly 为什么比 asm.js 快？",
         "https://github.com/emscripten-core/emscripten/wiki/Porting-Examples-and-Demos#graphics": "Porting Examples and Demos",
         "https://zhuanlan.zhihu.com/p/38023156": "WebAssembly：系统编程语言的逆袭",
