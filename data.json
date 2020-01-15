@@ -37,6 +37,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://zhuanlan.zhihu.com/p/38023156": "WebAssembly：系统编程语言的逆袭",
         "https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS": "List of languages that compile to JS",
         "https://hacks.mozilla.org/2015/03/asm-speedups-everywhere/": "asm.js Speedups Everywhere",
         "http://www.ruanyifeng.com/blog/2017/09/asmjs_emscripten.html": "asm.js 和 Emscripten 入门教程",
