@@ -37,6 +37,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "http://www.ruanyifeng.com/blog/2017/09/asmjs_emscripten.html": "asm.js 和 Emscripten 入门教程",
         "https://zhuanlan.zhihu.com/p/51035404": "用Rust语言开发微信小程序",
         "https://nshipster.com/nsoperation/": "NSOperation",
         "https://stackoverflow.com/questions/39600914/push-notification-not-received-when-app-is-in-background-in-ios-10": "Push notification not received when App is in Background in iOS 10",
