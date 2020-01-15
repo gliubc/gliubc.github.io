@@ -37,6 +37,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://zhuanlan.zhihu.com/p/51035404": "用Rust语言开发微信小程序",
         "https://nshipster.com/nsoperation/": "NSOperation",
         "https://stackoverflow.com/questions/39600914/push-notification-not-received-when-app-is-in-background-in-ios-10": "Push notification not received when App is in Background in iOS 10",
         "https://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-javascript": "What is TypeScript and why would I use it in place of JavaScript?",
