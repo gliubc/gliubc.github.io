@@ -8,6 +8,7 @@
         "https://github.com/AssemblyScript/assemblyscript": "AssemblyScript",
         "https://nodejs.org/en/": "Node.js",
         "https://deno.land/": "Deno",
+        "https://v8.dev/": "V8",
         "http://www.easemob.com": "环信",
         "https://echo.labstack.com": "echo",
         "https://golang.org": "go",
