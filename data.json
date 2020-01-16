@@ -37,6 +37,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://www.freecodecamp.org/news/understanding-the-core-of-nodejs-the-powerful-chrome-v8-engine-79e7eb8af964/": "Understanding How the Chrome V8 Engine Translates JavaScript into Machine Code",
         "https://stackoverflow.com/questions/53428120/deno-vs-ts-node-whats-the-difference": "deno vs ts-node : what's the difference",
         "https://www.ibm.com/developerworks/cn/web/wa-lo-webassembly-status-and-reality/index.html": "WebAssembly 现状与实战",
         "https://malloc.fi/typescript-bridge-javascript-webassembly": "TypeScript is the bridge between JavaScript and WebAssembly",
