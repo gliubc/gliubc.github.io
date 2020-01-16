@@ -40,6 +40,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://en.wikipedia.org/wiki/Deno_(software)": "Deno (software)",
         "https://medium.com/lean-mind/deno-node-js-killer-718c8969770b": "Deno is the new Node?",
         "https://www.freecodecamp.org/news/understanding-the-core-of-nodejs-the-powerful-chrome-v8-engine-79e7eb8af964/": "Understanding How the Chrome V8 Engine Translates JavaScript into Machine Code",
         "https://stackoverflow.com/questions/53428120/deno-vs-ts-node-whats-the-difference": "deno vs ts-node : what's the difference",
