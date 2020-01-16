@@ -40,6 +40,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://en.wikipedia.org/wiki/WebGL": "WebGL",
         "https://get.webgl.org/": "Your browser supports WebGL",
         "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API": "WebGL: 2D and 3D graphics for the web",
         "https://compile.fi/canvas-filled-three-ways-js-webassembly-and-webgl/": "CANVAS FILLED THREE WAYS: JS, WEBASSEMBLY AND WEBGL",
