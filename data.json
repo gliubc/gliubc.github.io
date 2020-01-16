@@ -7,6 +7,7 @@
         "https://www.typescriptlang.org/": "TypeScript",
         "https://github.com/AssemblyScript/assemblyscript": "AssemblyScript",
         "https://nodejs.org/en/": "Node.js",
+        "https://deno.land/": "Deno",
         "http://www.easemob.com": "环信",
         "https://echo.labstack.com": "echo",
         "https://golang.org": "go",
