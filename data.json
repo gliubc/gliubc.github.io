@@ -40,6 +40,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://www.caniuse.com/#feat=webgl": "WebGL - 3D Canvas graphics",
         "https://docs.unity3d.com/Manual/webgl-browsercompatibility.html": "WebGL Browser Compatibility",
         "https://manu.ninja/25-real-world-applications-using-webgl": "25+ Real-World Applications Using WebGL",
         "https://www.cnblogs.com/lhb25/p/20-webgl-demo-and-examples.html": "20个不可思议的 WebGL 示例和演示",
