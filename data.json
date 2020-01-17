@@ -41,6 +41,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-javascript-full-stack-development/": "The Good and the Bad of JavaScript Full Stack Development",
         "https://www.hostingadvice.com/blog/nodejs-vs-golang/": "Node.js vs Golang: Battle of the Next-Gen Languages",
         "https://codeburst.io/should-i-rust-or-should-i-go-59a298e00ea9": "Should I Rust, or Should I Go",
         "https://nodejs.org/en/docs/guides/nodejs-docker-webapp/": "Dockerizing a Node.js web app",
