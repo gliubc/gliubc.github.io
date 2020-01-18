@@ -43,6 +43,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://github.com/golang/go/wiki/Projects": "Go Projects",
         "https://endler.dev/2017/go-vs-rust/": "Go vs Rust? Choose Go",
         "https://appinventiv.com/blog/go-vs-rust/": "Go vs Rust: Which is Better and Why?",
         "https://www.toptal.com/back-end/server-side-io-performance-node-php-java-go": "Server-side I/O Performance: Node vs. PHP vs. Java vs. Go",
