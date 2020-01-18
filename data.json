@@ -41,6 +41,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://yeasy.gitbooks.io/docker_practice/": "Docker — 从入门到实践",
         "https://docs.docker.com/docker-for-mac/install/": "Install Docker Desktop on Mac",
         "https://developer.ibm.com/technologies/node-js/articles/learn-node-unit-1-overview-nodejs-learning-path": "Learn Node.js",
         "https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-javascript-full-stack-development/": "The Good and the Bad of JavaScript Full Stack Development",
