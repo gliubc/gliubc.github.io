@@ -41,6 +41,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#global-npm-dependencies": "Docker and Node.js Best Practices",
         "https://yeasy.gitbooks.io/docker_practice/": "Docker — 从入门到实践",
         "https://docs.docker.com/docker-for-mac/install/": "Install Docker Desktop on Mac",
         "https://developer.ibm.com/technologies/node-js/articles/learn-node-unit-1-overview-nodejs-learning-path": "Learn Node.js",
