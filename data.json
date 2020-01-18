@@ -13,6 +13,7 @@
         "https://www.docker.com/": "docker",
         "http://www.easemob.com": "环信",
         "https://echo.labstack.com": "echo",
+        "https://gin-gonic.com/": "Gin Web Framework",
         "https://golang.org": "go",
         "https://duckduckgo.com": "DuckDuckGo",
         "https://twitter.com/home": "twitter",
