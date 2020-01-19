@@ -43,6 +43,7 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+        "https://medium.com/better-programming/a-complete-go-development-environment-with-docker-and-vscode-a3e4410d27f7": "A Complete Go Development Environment With Docker and VS Code",
         "https://github.com/golang/go/wiki/Projects": "Go Projects",
         "https://endler.dev/2017/go-vs-rust/": "Go vs Rust? Choose Go",
         "https://appinventiv.com/blog/go-vs-rust/": "Go vs Rust: Which is Better and Why?",
