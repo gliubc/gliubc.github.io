@@ -44,6 +44,8 @@
         "https://web.xyz": "倒数网络"
     },
     "recent_updates": {
+"https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units": "How To Use Systemctl to Manage Systemd Services and Units
+",
         "https://learning.oreilly.com/library/view/the-go-programming/9780134190570/": "The Go Programming Language",
         "https://github.com/search?q=stars:%3E1&ref=searchresults&type=Repositories&utf8=%E2%9C%93": "Search · stars:>1",
         "https://medium.com/better-programming/a-complete-go-development-environment-with-docker-and-vscode-a3e4410d27f7": "A Complete Go Development Environment With Docker and VS Code",
