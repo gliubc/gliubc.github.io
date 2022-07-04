@@ -1,285 +1,178 @@
+
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Liu Baocheng">
-    <title>color nodes</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico">
-    <!-- Favicons -->
-    <!--         <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-        <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-        <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
- -->
-    <meta name="theme-color" content="#343a40">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>简历</title>
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+        body {
+            background-color: #4f5259;
+            font-family: arial, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            min-height: 1200px;
+            margin: 100px auto;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .left-panel {
+            flex-basis: 33.3%;
+            background-color: #0f4b41;
+        }
+
+        .left-panel .content {
+            margin: 70px 50px 70px 60px;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .left-panel .content .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: black;
+            object-fit: cover;
+            align-self: center;
+        }
+
+        .left-panel .content .name {
+            margin-top: 10px;
+            font-size: 23px;
+            font-weight: bold;
+            color: white;
+            align-self: center;
+        }
+
+        .left-panel .content .separator {
+            margin-top: 10px;
+            width: 18px;
+            height: 2px;
+            background-color: #55817a;
+            align-self: center;
+        }
+
+        .left-panel .content .position {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #eee;
+            align-self: center;
+        }
+
+        .left-panel .content .title {
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .left-panel .content .link {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #eee;
+        }
+
+        .left-panel .content .link a:link {
+            color: white;
+        }
+
+        .left-panel .content .link a:visited {
+            color: #eee;
+        }
+
+        .left-panel .content .link a:hover {
+            color: white;
+        }
+
+        .left-panel .content .link a:active {
+            color: white;
+        }
+
+        .left-panel .content .skill {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #eee;
+        }
+
+        .left-panel .content .skill-progress {
+            margin-top: 7px;
+            width: 100%;
+            height: 4px;
+            background-color: #55817a;
+        }
+
+        .left-panel .content .hobbies {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #eee;
         }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="offcanvas.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand mr-auto mr-lg-0" href="#">color nodes</a>
-        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Notifications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Switch account</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Settings</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item"
-                            href="https://github.com/gliubc/gliubc.github.io/edit/master/data.json">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="content">
+                <img class="avatar" src="./Rustacean.png" />
+                <div class="name">刘宝成</div>
+                <div class="separator"></div>
+                <div class="position">iOS攻城狮</div>
+                <div class="title">联系</div>
+                <div class="link"><a href="tel:+8613013514609">13013514609</a></div>
+                <div class="link"><a href="mailto:lbc_mail@163.com">lbc_mail@163.com</a></div>
+                <div class="title">主页</div>
+                <div class="link"><a href="https://colornodes.com">colornodes.com</a></div>
+                <div class="title">技能</div>
+                <div class="skill">
+                    <div class="skill-title">C/C++</div>
+                    <div class="skill-progress">
+                        <div style="width: 60%; height: 100%; background-color: white;"></div>
                     </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="refresh">Refresh</button>
-            </form>
-        </div>
-    </nav>
-    <div class="nav-scroller bg-white shadow-sm">
-        <nav class="nav nav-underline">
-            <a class="nav-link active" href="#">Dashboard</a>
-            <a class="nav-link" href="#">
-                Friends
-                <span class="badge badge-pill bg-light align-text-bottom">27</span>
-            </a>
-            <a class="nav-link" href="#">Explore</a>
-            <a class="nav-link" href="#">Suggestions</a>
-        </nav>
-    </div>
-    <main role="main" class="container" id="app">
-        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
-            <svg class="bd-placeholder-img mr-2 rounded" width="48" height="48" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" :fill="'https://colornodes.com'.hexColor()" />
-                <text x="50%" y="50%" fill="#FFFFFF" dy=".3em"></text>
-            </svg>
-
-            <div class="lh-100">
-                <h6 class="mb-0 text-white lh-100">ColorNodes</h6>
-                <small>Since 2019</small>
+                </div>
+                <div class="skill">
+                    <div class="skill-title">Objective-C</div>
+                    <div class="skill-progress">
+                        <div style="width: 80%; height: 100%; background-color: white;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-title">Swift</div>
+                    <div class="skill-progress">
+                        <div style="width: 80%; height: 100%; background-color: white;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-title">MVC</div>
+                    <div class="skill-progress">
+                        <div style="width: 80%; height: 100%; background-color: white;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-title">MVVM</div>
+                    <div class="skill-progress">
+                        <div style="width: 60%; height: 100%; background-color: white;"></div>
+                    </div>
+                </div>
+                <div class="title">爱好</div>
+                <div class="hobbies">篮球、足球、乒乓球、羽毛球</div>
             </div>
         </div>
-        <div class="my-3 p-3 bg-white rounded shadow-sm">
-            <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
-            <template>
-                <div class="media text-muted pt-3" v-for="(title, href) in suggestions">
-                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: 32x32">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" :fill="href.hexColor()" />
-                        <text x="50%" y="50%" :fill="title.hexColor()" dy=".3em"></text>
-                    </svg>
-                    <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <div class="d-flex justify-content-between align-items-center w-100">
-                            <strong class="text-gray-dark"><a :href="href">{{title}}</a></strong>
-                        </div>
-                        <span class="d-block">{{href}}</span>
-                    </div>
-                </div>
-            </template>
-            <small class="d-block text-right mt-3">
-                <a href="https://www.google.com/">All suggestions</a>
-            </small>
-        </div>
-        <div class="my-3 p-3 bg-white rounded shadow-sm">
-            <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
-            <template>
-                <div class="media text-muted pt-3" v-for="(title, href) in recent_updates">
-                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: 32x32">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" :fill="href.hexColor()" />
-                        <text x="50%" y="50%" :fill="title.hexColor()" dy=".3em"></text>
-                    </svg>
-                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                        <strong class="d-block text-gray-dark"><a :href="href">{{title}}</a></strong>
-                        {{href}}
-                    </p>
-                </div>
-            </template>
-            <small class="d-block text-right mt-3">
-                <a href="https://stackoverflow.com/">All updates</a>
-            </small>
-        </div>
-    </main>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-    <!-- Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
-    <!-- pinyin -->
-    <script src="https://hotoo.github.io/pinyin/dist/bundle.js?nowrap"></script>
-
-    <script src="offcanvas.js"></script>
-
-    <script>
-        var vm, jsonData, search;
-
-        var pinyin = window['pinyin'];
-
-        $(function () {
-            vm = new Vue({
-                el: '#app',
-                data: {
-                    suggestions: {},
-                    recent_updates: {},
-                },
-                mounted: function () {
-                    vm = this;
-                }
-            });
-
-            $.getJSON("data.json", function (data) {
-                jsonData = data;
-                filter();
-                update();
-            });
-
-            $('#search').keyup(function (event) {
-                search = $('#search').val();
-                filter();
-            });
-
-            $('#refresh').click(update);
-
-            setInterval(update, 10 * 1000);
-        });
-
-        function filter() {
-            var filteredData = $.extend(true, {}, jsonData);
-            for (var group in filteredData) {
-                for (var key in filteredData[group]) {
-                    var value = filteredData[group][key];
-                    var text = key + value;
-                    var pinyin_text = pinyin(text, {
-                        style: pinyin['STYLE_NORMAL']
-                    }).join('');
-                    var pinyin_search = pinyin(search, {
-                        style: pinyin['STYLE_NORMAL']
-                    }).join('');
-
-                    if (!match(search, text) && !match(pinyin_search, pinyin_text)) {
-                        delete filteredData[group][key];
-                    }
-                }
-            }
-            vm.suggestions = filteredData.suggestions;
-            vm.recent_updates = filteredData.recent_updates;
-        }
-
-        function update() {
-            $.getJSON("data.json?timestamp=" + Date.now(), function (data) {
-                jsonData = data;
-                filter();
-            });
-        }
-
-        function match(keyword, text) {
-            var i, index, keywords;
-
-            keyword = keyword || "";
-            text = text || "";
-
-            keyword = keyword.trim().toLowerCase().replace(/_/g, '');
-            text = text.trim().toLowerCase().replace(/_/g, '');
-
-            if (!keyword) return true;
-
-            keywords = keyword.split(' ').filter(word => word.length > 0);
-            for (i in keywords) {
-                index = text.indexOf(keywords[i]);
-                if (index === -1) {
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        String.prototype.hashCode = function () {
-            var hash = 0, i, chr;
-            if (this.length === 0) return hash;
-            for (i = 0; i < this.length; i++) {
-                chr = this.charCodeAt(i);
-                hash = ((hash << 5) - hash) + chr;
-                hash |= 0; // Convert to 32bit integer
-            }
-            return hash;
-        };
-
-        String.prototype.hexColor = function () {
-            var hexString = Math.abs(this.hashCode()).toString(16);
-            if (hexString.length < 6) {
-                return '#' + hexString + '0'.repeat(6 - hexString.length);
-            } else {
-                return '#' + hexString.substring(0, 6);
-            }
-        };
-
-        function getRandomColor() {
-            var letters = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-    </script>
+        <div class="right-panel">right</div>
+    </div>
 </body>
 
 </html>
